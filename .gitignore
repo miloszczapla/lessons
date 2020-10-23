@@ -1,4 +1,3 @@
 /node_modules
-# /vue-package
-/server/public
+/vue-package
 tsconfig.json
