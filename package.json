@@ -2,6 +2,9 @@
   "name": "milosz-lessons",
   "version": "1.0.0",
   "description": "lessons excersise online",
+  "engines": {
+    "node": "14.x"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
