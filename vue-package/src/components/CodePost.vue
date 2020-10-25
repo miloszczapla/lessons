@@ -7,6 +7,11 @@
 <script>
 export default {
   name: "CodePost",
+  props: {
+      code: Object,
+
+  },
+
 };
 </script>
 

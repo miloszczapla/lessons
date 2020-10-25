@@ -5,7 +5,7 @@ const url = "api/lessons/";
 
 class PostService {
   //Get Post
-  static getPosts() {
+  static getCode() {
     return new Promise(async (resolve, reject) => {
       try {
         const res = await axios.get(url);
@@ -22,14 +22,15 @@ class PostService {
     });
   }
   //ADD post
-  static insertPost(text) {
+  static insertCode(text,style) {
     return axios.post(url, {
       text,
+      style
     });
   }
 
   //deletePost
-  static deletePost(id) {
+  static deleteCode(id) {
     return axios.delete(`${url}${id}`);
   }
 }

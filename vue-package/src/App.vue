@@ -8,20 +8,47 @@
 </template>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+
+$header-color: -webkit-linear-gradient(
+    189deg,
+    #e43b3b 20%,
+    #bb6b10 60%,
+    #ffdc40 70%
+  );
+$text-color: #1c509c;
+
+header,
+.header {
+  font-size: 4rem;
+  background: $header-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight: bold;
+}
+
 :root {
   font-size: 12px;
 }
 
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c0d0e2;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: $text-color;
+  font-size: 2rem;
 }
 
 #nav {
@@ -29,10 +56,10 @@
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #1e8a78;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #25ac95;
     }
   }
 }

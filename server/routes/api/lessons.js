@@ -13,6 +13,7 @@ router.post('/', async (req,res) => {
     const posts = await loadDataFromDB()
     await posts.insertOne({
         text: req.body.text,
+        style: req.body.style,
         createdAt: new Date()
     })
     res.status(201).send()

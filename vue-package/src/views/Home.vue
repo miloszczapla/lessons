@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
     <PostComponent />
   </div>
 </template>
@@ -16,3 +15,12 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+ .home {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+</style>
