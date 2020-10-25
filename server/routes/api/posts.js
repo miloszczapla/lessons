@@ -31,7 +31,7 @@ async function loadDataFromDB() {
     const uri = "mongodb+srv://milosz:Dzikiryj45@lessons.3daez.mongodb.net/lessons?retryWrites=true&w=majority";
     const client = await mongodb.MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 
-    return client.db('lessons').collection('lessons')
+    return client.db('lessons').collection('posts')
 }
 
 module.exports = router

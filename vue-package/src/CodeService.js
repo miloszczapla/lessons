@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const url = "api/posts/";
+const url = "api/lessons/";
+
 
 class PostService {
   //Get Post
