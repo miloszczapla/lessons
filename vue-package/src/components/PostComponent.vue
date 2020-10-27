@@ -80,7 +80,6 @@ export default {
     flex-direction: column;
     justify-content: space-around;
     padding: 2rem 0;
-    // border: 3px solid #1c509c;
     width: 300px;
     height: 200px;
 

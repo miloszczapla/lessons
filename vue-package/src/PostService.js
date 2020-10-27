@@ -22,6 +22,7 @@ class PostService {
   }
   //ADD post
   static insertPost(text) {
+    if (text==='') return 0
     return axios.post(url, {
       text,
     });

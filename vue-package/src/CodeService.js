@@ -22,10 +22,12 @@ class PostService {
     });
   }
   //ADD post
-  static insertCode(text,style) {
+  static insertCode(text, style) {
+    text += style
+    if (text==='') return 0
+    console.log(text);
     return axios.post(url, {
       text,
-      style
     });
   }
 
